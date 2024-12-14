@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen text-center font-montserrat;
+}
+
+.submitting {
+  background: linear-gradient(rgb(22 101 52) 0 0) 0/0 no-repeat rgb(229 229 229);
+  animation: loadingLinear 1s infinite steps(5);
+}
+@keyframes loadingLinear {
+  100% {
+    background-size: 140%;
+  }
+}
