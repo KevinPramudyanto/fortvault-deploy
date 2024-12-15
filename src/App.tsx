@@ -43,7 +43,7 @@ function App() {
     document.title = snackbarMessage === "" ? "FortVault" : snackbarMessage;
 
     const link = document.querySelector("link[rel='icon']") as HTMLLinkElement;
-    link.href = snackbarMessage === "" ? "./safe.png" : "./check.png";
+    link.href = snackbarMessage === "" ? "/safe.png" : "/check.png";
   }, [snackbarMessage]);
 
   return (
